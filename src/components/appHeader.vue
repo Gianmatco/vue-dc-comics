@@ -15,6 +15,7 @@
         
 
     </nav>
+
     
 
 </header>
@@ -105,6 +106,7 @@ li{
 }
 nav img{
     width: 80px;
+    
     
 }
 

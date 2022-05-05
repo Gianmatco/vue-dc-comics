@@ -19,9 +19,13 @@ export default {
   components: {
     appHeader,
     appGrid,
-    appFooter
-    
-    
+    appFooter 
+  },
+  data(){
+    return{
+      
+
+    }
   }
 }
 </script>
