@@ -1,9 +1,7 @@
 <template>
   <div id="app">
     <app-header/>
-    <main>
-      <app-grid/>
-    </main>
+    <app-grid/>
     <app-footer/>  
     
   </div>
@@ -31,6 +29,9 @@ export default {
 <style scoped lang="scss">
 @import './style/variables';
 @import './style/generals';
+
+
+
 
 
 </style>

@@ -1,16 +1,18 @@
 <template>
 <header>
-    <nav>
+    <nav class="flex-container">
         <div class="logo">
             <a href="#">
                 <img src="../assets/images/dc-logo.png" alt="">
             </a>
         </div>
         
+        <div class="nav-option">
+            <ul>
+                <li v-for="(item, index) in links" :key="index" :class="{'selected': item.active}">{{item.testo}}</li>
+            </ul>
+        </div>
         
-        <ul>
-            <li v-for="(item, index) in links" :key="index" :class="{'selected': item.active}">{{item.testo}}</li>
-        </ul>
 
     </nav>
     
@@ -85,15 +87,15 @@ export default {
 
 
 <style scoped lang="scss">
-header{
-    
-    margin: 0 auto;
+
+.flex-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
 }
-ul{
-    float: right;
-    padding: auto 0;
-    
-}
+
+
 li{
     list-style: none;
     display: inline-block;
@@ -105,12 +107,8 @@ nav img{
     width: 80px;
     
 }
-.logo{
-    float: left;
-}
-.selected{
-    
-}
+
+
 
 
 </style>
