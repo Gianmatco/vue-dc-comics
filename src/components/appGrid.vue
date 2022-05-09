@@ -3,7 +3,10 @@
     <div id="jumbotron"></div>
     <div>
         <div class="container">
+           
             <products-card v-for="(card, index) in cards" :key="index" :immagine="card.thumb" :titolo="card.series"/>
+           
+            
 
 
         </div>
@@ -168,11 +171,10 @@ export default {
     background-color: #1c1c1c;
     display: flex;
     align-items: center; 
+    flex-wrap: wrap ;
+    
 }
-img{
-    width: 70px;
 
-}
 .container-img-text{
     
     height: 200px;
@@ -181,6 +183,10 @@ img{
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
+    img{
+    width: 70px;
+    }
 }
 
 #jumbotron{
